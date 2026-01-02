@@ -38,7 +38,7 @@ pipeline {
         stage('Docker Build & Deploy') { 
             steps { 
                 // Ensure karein ke 'docker-credentials' ka ID Jenkins mein sahi hai
-                sshagent(['github-credentials']) { 
+                sshagent(['docker-credentials']) { 
                     sh """
                     scp -o StrictHostKeyChecking=no index.html Dockerfile ${DOCKER_SERVER}:/home/ubuntu/
                     
