@@ -10,7 +10,7 @@ pipeline {
     environment { 
         REPO_URL      = 'https://github.com/Irfan-Gulzar/Pipeline' 
         SONARQUBE_ENV = 'SonarQube-Server' 
-        DOCKER_SERVER = 'ubuntu@ip-172-31-95-185' 
+        DOCKER_SERVER = 'ubuntu@ip-172-31-86-159' 
         SONAR_SCANNER_OPTS = "-Xmx512m" 
     } 
 
